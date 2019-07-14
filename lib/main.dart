@@ -3,14 +3,11 @@ import 'package:osg4_final_project/ui/splash/splash.dart';
 
 void main() => runApp(MyApp());
 
-class MyApp extends StatefulWidget {
-  @override
-  _MyAppState createState() => _MyAppState();
-}
-
-class _MyAppState extends State<MyApp> {
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    // TODO: implement build
     return MaterialApp(debugShowCheckedModeBanner: false, home: Splash());
   }
 }
+
