@@ -3,7 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:osg4_final_project/model/card_info.dart';
 import 'package:osg4_final_project/network/service_network.dart';
 import 'package:rflutter_alert/rflutter_alert.dart';
-
+import 'dart:io';
 import 'list_card_info.dart';
 
 class Home extends StatelessWidget {
@@ -60,7 +60,7 @@ class Home extends StatelessWidget {
             style: TextStyle(color: Colors.white, fontSize: 20),
           ),
           onPressed: () =>
-              SystemChannels.platform.invokeMethod('SystemNavigator.pop'),
+              exit(0),
           gradient: LinearGradient(colors: [
             Color.fromRGBO(116, 116, 191, 1.0),
             Color.fromRGBO(52, 138, 199, 1.0)
@@ -69,4 +69,5 @@ class Home extends StatelessWidget {
       ],
     ).show();
   }
+
 }
